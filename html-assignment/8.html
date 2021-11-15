@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,td{
+                border:1px solid black; 
+                border-width:2px;  
+            }
+
+            table{
+                border-collapse:collapse;
+            }
+            /* tr.height{
+                height:3rem;
+                width:3rem;
+            } */
+            td.green{
+                background-color:#008080;
+
+                
+            }
+            td.left{
+                height:3rem;
+                width:3rem;
+                background-color:#808080;
+                vertical-align:bottom;
+            }
+            td.right{
+                height:3rem;
+                width:3rem;
+                background-color:#C0C0C0;
+                vertical-align:bottom;
+            }
+        </style>
+        <title>table</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td class="green" colspan="2">top</td>
+            </tr>
+            <tr class="height">
+                <td class="left">left</td>
+                <td class="right">right</td>
+            </tr>
+
+        </table>
+    </body>
+</html>

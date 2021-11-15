@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,td{
+                border:1px solid black; 
+                border-width:2px;  
+            }
+
+            table{
+                
+                border-collapse:collapse;
+            }
+            tr{
+                vertical-align:bottom;
+            }
+    
+            td.dark{
+                
+                background-color:#808080;
+            }
+            td.grey{
+               
+                background-color:#C0C0C0;
+            }
+            .boxsize{
+                height:3rem;
+                width:3rem;
+            }
+        </style>
+        <title>table</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td class="grey">topleft</td>
+                <td class="dark">topright</td>
+            </tr>
+            <tr class="height">
+                <td class="dark boxsize">botleft</td>
+                <td class="grey boxsize">botright</td>
+            </tr>
+
+        </table>
+    </body>
+</html>

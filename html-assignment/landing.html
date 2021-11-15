@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        body{
+          margin:0;
+        }
+        .container{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          display:grid;
+          grid-template-rows: 500px;
+          grid-template-columns: 50% 50%;
+
+
+        }
+        .container > div{
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align:center;
+          padding:20px 0;
+        }
+        .grid-item1{
+          grid-column-start:1;
+          grid-column-end: 3;
+          background-image: linear-gradient(black, black),url('img/jess-bailey.jpg');
+background-blend-mode: saturation;
+          background-repeat: no-repeat;
+          background-size: cover;
+          font-size:20px;
+        }
+        .grid-item2{
+          grid-column-start:1;
+          grid-column-end: 3;
+        }
+        .grid-item3{
+          grid-column-start:1;
+          grid-column-end: 3;
+        }
+        .grid-item4{
+          grid-column-start:1;
+          grid-column-end: 3;
+        }
+        div>.grid-item4{
+          background-color: rgb(25, 183, 231);
+
+        }
+
+       div> .grid-item5{
+        background-color: rgb(159, 235, 37);
+         
+        }
+       div>.grid-item6 {
+          background-color: rgb(224, 187, 24);
+        }
+        .item1{
+          position: relative;
+          top: 20%;
+          margin: auto;
+          width: 60%;
+        }
+        .item2{
+          margin: auto;
+          width: 70%;
+        }
+        .item4{
+          margin: auto;
+          width: 70%;
+        }
+        .item5{
+          margin: auto;
+          width: 70%;
+        }
+        .item6{
+          margin: auto;
+          width: 70%;
+        }
+        .button {
+          position: inherit;
+          top: 30px;
+          text-decoration: none;
+          font-size: 1.5rem;
+          background-color: transparent;
+          cursor: pointer;
+          border: 1px solid black;
+          width: 150px;
+          padding: 20px;
+        }
+        .button:hover{
+          background-color: #1B9EC4;
+        }
+        .footer{
+          font-family: Arial, Helvetica, sans-serif;
+          padding: 10px 0 10px 0;
+          background-color: black;
+          color: white;
+          height: 20px;
+          text-align: center;
+        }
+      </style>
+    </head>
+<body>
+<div class="container">
+<div class="grid-item1">
+  <div class="item1">
+  <h1>Welcome to Acme</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla elementum tincidunt. Praesent sit amet magna id augue aliquet egestas. Mauris congue porttitor ipsum et dapibus. Donec vel nunc purus.</p>
+  <a class="button" href="https://google.com" target"_blank>Explore</a>
+</div>
+</div>
+<div class="grid-item2">
+  <div class="item2">
+  <div><h3>Web & Application Development</h3></div>
+  <div>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Consequat nisl vel pretium lectus quam id. Arcu odio ut sem nulla pharetra diam sit amet nisl. Turpis cursus in hac habitasse platea.</div>
+  <div>Orci dapibus ultrices in iaculis nunc sed augue lacus viverra. Velit egestas dui id ornare arcu. In nibh mauris cursus mattis molestie a iaculis at erat. Nibh nisl condimentum id venenatis. Velit ut tortor pretium viverra suspendisse potenti. Mauris pharetra et ultrices neque.</div>
+</div>
+</div>
+</div>
+<div class="grid-item3"></div>
+<div class="grid-item4">
+  <div class="item4">
+  <div><h3>We handle all of your digital needs</h3></div>
+  <div>Vestibulum lectus mauris ultrices eros in cursus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend. Quam lacus suspendisse faucibus interdum posuere.</div>
+  </div>
+</div>
+<div class="grid-item5">
+  <div class="item5">
+    <h3>Contact Us</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</p>
+    <p>support@company.com</p>
+  </div>
+  
+</div>
+<div class="grid-item6">
+  <div class="item6">
+  <h3>About Our Company</h3>
+  <p>Turpis cursus in hac habitasse platea. Orci dapibus ultrices in iaculis nunc sed augue lacus viverra. Velit egestas dui id ornare arcu.</p>
+</div>
+</div>
+</div>
+<footer class="footer">
+  <div>&copy; Copyright 2021 Company</div>
+</footer>
+
+</body>
+
+
+</html>

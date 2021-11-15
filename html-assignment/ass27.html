@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+  
+    /* p{ padding:10px;
+        border:1px solid #FF1414;
+        outline-style:dotted;
+        outline-color:#0BFF0B;
+       
+    }
+    div{
+        background-color:#E0FFFF;
+    } */
+
+    div.parent{
+        width: 46%;
+        height: 54px;
+        border:1px solid black;
+    }
+    div.child{
+        display:inline-block;
+    }
+    div.main{
+        margin: 8px 4px 8px 4px;
+        border:1px solid #FF1414;
+        outline-style:dotted;
+        outline-color:#0BFF0B;
+    }
+    .left,.right{
+        margin: 0 2px 0 2px;
+        vertical-align:top;
+        width:4px;
+        height: inherit;
+        background-color:#E0FFFF;
+    }
+
+</style>
+</head>
+<body>
+    <div class="parent">
+    <div class="left child"></div>
+    <div class="main child"><strong>Note:</strong>IE8 supports the outline only if a DOCTYPE! is </br> specified.</div>
+    <div class="right child"></div>
+    </div>
+</body>
+</html>

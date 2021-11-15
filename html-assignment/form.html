@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                margin-top:10px;
+
+            }
+        .fieldset{
+            margin-top:20px;
+        }
+        .container{
+            padding:30px;
+            background-color:#ffffb3;
+            margin:auto;
+            width:50%;
+
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <h1>Employee details</h1>
+                <fieldset class="fieldset">
+                    <legend>
+                        Personal details*
+                    </legend>
+                    <div class="box">
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="First Name" id="fname">
+                    </div>
+                    <div class="box">
+                        <label for="mname">Middle Name:</label>
+                        <input type="text" name="Middle Name" id="mname">
+                    </div>
+                    <div class="box">
+                        <label>Last Name:</label>
+                        <input type="text" name="Last Name" id="lname">
+                    </div>
+                    <div class="box">
+                        Gender:<input type="radio" name="gender" id="male"><label for="male">Male</label>
+                        <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                        <input type="radio" name="gender" id="others"><label for="others">Others</label>
+                    </div>
+                    <div class="box">
+                        <label for="date-label">Date of birth:</label>
+    <input type="date" name="bday">
+                    </div>
+                    <div class="box">
+                        Select your State:
+                        <select>
+                            <option selected disabled>--Select --</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Goa</option>
+                            <option>Karnataka</option>
+                            <option>Kerala</option>
+
+                            <option>Odisha</option>
+                            
+                            <option>Maharastra</option>
+                            <option>Odisha</option>
+                        </select>
+                    </div>
+
+
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend>
+                        Additional Information
+                    </legend>
+                    <div class="box">
+                        <textarea id="msg" name="user_message" rows="4" cols="50" width="inherit" placeholder="Enter Text Here"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend>
+                        Self declaration*
+                    </legend>
+                    <div class="box">By filling this form you agree to the terms and conditions of our company</p>
+                    <label><input type="checkbox" checked>I Agree</label></div>
+                </fieldset>
+                <div class="box">
+                    <p>(*) mandatory fields</p> 
+                </div>
+                <div class="box">
+          <input type="submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
