@@ -1,0 +1,48 @@
+<html> 
+<head> 
+<script>
+class Longest
+{
+	static
+	getAns(str, ans, i, ls)
+	{
+		if (i >= str.length)
+		{
+			return ls;
+		}
+		if (str.charAt(i) == 'a' || str.charAt(i) == 'b')
+		{
+			if (!ans == "")
+			{
+				(ls.push(ans) > 0);
+			}
+			ans = "";
+			return Longest.getAns(str, ans, i + 1, ls);
+		}
+		ans += str.charAt(i);
+		return Longest.getAns(str, ans, i + 1, ls);
+	}
+	static
+	main(args)
+	{
+		var str = "ababcdababefgababhiab";
+		var ans = "";
+		var ls = new Array();
+		Longest.getAns(str, ans, 0, ls);
+		var max = (ls[0]).length;
+		var finalAns = "";
+		for (const s of ls)
+		{
+			if (s.length > max)
+			{
+				finalAns = s;
+			}
+		}
+		console.log("List of values having neither a nor ab:" + ls);
+		console.log(finalAns);
+	}
+}
+Longest.main([]);
+</script>
+</head>
+</html>

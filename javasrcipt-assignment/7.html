@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script>
+    function currencyConverter(){
+        var amount =document.getElementById('forex-amount').value;
+        var currency=document.getElementById('forex-rate').value;
+        document.getElementById('forex-ugx').innerHTML=amount*currency;
+    }
+
+</script>
+</head>
+
+<body>
+ 
+<h3>Converter </h3>
+ 
+<!-- <form onsubmit="currencyConverter()"> -->
+ <label for="forex-amount">Dollar</label>
+<input type="number" id="forex-amount" placeholder="Enter currency">
+ 
+<select id="forex-rate">
+<option disabled selected value="1">select currency</option>
+<option value="74.28">INR</option>
+<option value="109.14">Yen</option>
+<option value="0.84">EUR</option>
+<option value="0.72">Pound sterling</option>
+</select>
+ <button onclick="currencyConverter()">
+     calculate
+ </button>
+
+<!-- </form> -->
+<div>
+    <label for="forex-ugx">Result</label>
+<span id="forex-ugx"></span>
+</div>
+
+</body>
+</html>
