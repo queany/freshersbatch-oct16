@@ -1,0 +1,2 @@
+module Springcore_example {
+}
